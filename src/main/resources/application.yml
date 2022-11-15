@@ -2,10 +2,10 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    username:  doadmin
-    password: AVNS__h83peec9vjyGydZfTi
-    url: jdbc:postgresql://db-postgresql-sgp1-1611-do-user-12539490-0.b.db.ondigitalocean.com:25060/defaultdb
-    database: defaultdb
+    username:  ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    url: ${SPRING_DATASOURCE_URL}
+    database: ${SPRING_DATASOURCE_DATABASE}
     platform: postgres
     initialization-mode: always
     continue-on-error: true
